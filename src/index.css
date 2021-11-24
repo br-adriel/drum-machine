@@ -2,12 +2,15 @@
   font-size: 16px;
 }
 
+body,
 main,
 div,
 section,
 footer {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
