@@ -1,0 +1,6 @@
+.drum-machine {
+  min-width: 500px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.7);
+}
