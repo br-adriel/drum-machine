@@ -1,10 +1,13 @@
 import "./App.css";
+import DrumMachine from "./components/DrumMachine";
 import Container from "./components/Container";
 
 function App() {
   return (
     <main>
-      <Container></Container>
+      <Container>
+        <DrumMachine />
+      </Container>
     </main>
   );
 }
