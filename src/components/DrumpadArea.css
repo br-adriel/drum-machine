@@ -1,0 +1,9 @@
+.drumpad-area {
+  display: grid;
+  width: 50%;
+  min-height: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}

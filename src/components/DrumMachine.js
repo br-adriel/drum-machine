@@ -1,10 +1,10 @@
 import "./DrumMachine.css";
-import Drumpad from "./Drumpad";
+import DrumpadArea from "./DrumpadArea";
 
 const DrumMachine = (props) => {
   return (
     <div id="drum-machine" className="drum-machine">
-      <Drumpad />
+      <DrumpadArea />
     </div>
   );
 };
