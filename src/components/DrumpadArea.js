@@ -5,47 +5,56 @@ const DrumpadArea = (props) => {
   const drumpads = [
     {
       id: "Heater-1",
-      label: "Q",
+      keyboardKey: "Q",
+      label: "Heater 1",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
     },
     {
       id: "Heater-2",
-      label: "W",
+      keyboardKey: "W",
+      label: "Heater 2",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
     },
     {
       id: "Heater-3",
-      label: "E",
+      keyboardKey: "E",
+      label: "Heater 3",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
     },
     {
       id: "Heater-4_1",
-      label: "A",
+      keyboardKey: "A",
+      label: "Heater 4",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
     },
     {
       id: "Heater-6",
-      label: "S",
+      keyboardKey: "S",
+      label: "Clap",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
     },
     {
       id: "Dsc_Oh",
-      label: "D",
+      keyboardKey: "D",
+      label: "Open HH",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
     },
     {
       id: "Kick_n_Hat",
-      label: "Z",
+      keyboardKey: "Z",
+      label: "Kick n' Hat",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
     },
     {
       id: "RP4_KICK_1",
-      label: "X",
+      keyboardKey: "X",
+      label: "Kick",
       url: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
     },
     {
       id: "Cev_H2",
-      label: "C",
+      keyboardKey: "C",
+      label: "Closed HH",
       url: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
     },
   ];
@@ -55,10 +64,12 @@ const DrumpadArea = (props) => {
       {drumpads.map((item) => {
         return (
           <Drumpad
-            key={item.label}
+            key={item.keyboardKey}
+            keyboardKey={item.keyboardKey}
             label={item.label}
             url={item.url}
             id={item.id}
+            setActiveKey={props.setActiveKey}
           />
         );
       })}
