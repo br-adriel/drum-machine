@@ -9,7 +9,7 @@ const Drumpad = (props) => {
 
   useEffect(() => {
     document.addEventListener("keydown", (e) => {
-      if (e.key === keyCode) {
+      if (e.code === keyCode) {
         playAudio();
       }
     });
