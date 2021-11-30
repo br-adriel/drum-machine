@@ -3,7 +3,7 @@ import "./Display.css";
 const Display = (props) => {
   return (
     <div id="display" className="display">
-      <p>{props.text}</p>
+      <p>{props.activeKey}</p>
     </div>
   );
 };

@@ -2,9 +2,10 @@ import "./Drumpad.css";
 import { useEffect } from "react";
 
 const Drumpad = (props) => {
-  const keyCode = props.label.charCodeAt(0);
+  const keyCode = props.keyboardKey.charCodeAt(0);
   const playAudio = () => {
-    document.getElementById(props.label).play();
+    props.setActiveKey(props.label);
+    document.getElementById(props.keyboardKey).play();
   };
 
   useEffect(() => {
@@ -18,8 +19,8 @@ const Drumpad = (props) => {
   return (
     <>
       <button id={props.id} className="drum-pad" onClick={playAudio}>
-        {props.label}
-        <audio src={props.url} id={props.label} className="clip"></audio>
+        {props.keyboardKey}
+        <audio src={props.url} id={props.keyboardKey} className="clip"></audio>
       </button>
     </>
   );
