@@ -1,20 +1,17 @@
 import "./Drumpad.css";
-import { useEffect } from "react";
 
 const Drumpad = (props) => {
-  const keyCode = props.keyboardKey.charCodeAt(0);
   const playAudio = () => {
     props.setActiveKey(props.label);
     document.getElementById(props.keyboardKey).play();
   };
 
-  useEffect(() => {
-    document.addEventListener("keydown", (e) => {
-      if (e.code === keyCode) {
-        playAudio();
-      }
-    });
-  }, []);
+  document.addEventListener("keydown", (e) => {
+    console.log(e.code);
+    if (e.key.toLowerCase() === props.keyboardKey.toLowerCase()) {
+      playAudio();
+    }
+  });
 
   return (
     <>

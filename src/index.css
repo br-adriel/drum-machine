@@ -2,6 +2,10 @@
   font-size: 16px;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 body,
 main,
 div,
