@@ -8,9 +8,9 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .drum-machine {
-    width: 85%;
+    width: 90%;
     height: 60vh;
   }
 }
