@@ -5,4 +5,5 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 0.5rem;
   row-gap: 0.5rem;
+  height: 85%;
 }

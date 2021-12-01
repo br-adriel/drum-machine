@@ -1,10 +1,16 @@
 .drum-machine {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   min-width: 400px;
   padding: 1rem;
   border-radius: 0.3rem;
   background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .drum-machine {
+    width: 85%;
+    height: 60vh;
+  }
 }
